@@ -76,3 +76,5 @@ dmypy.json
 cython_debug/
 .idea/
 config.toml
+.pyrogram_client.session
+.avatar.png
