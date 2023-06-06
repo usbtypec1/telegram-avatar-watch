@@ -8,6 +8,9 @@ packages = [{include = "telegram_avatar_watch"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pyrogram = "^2.0.106"
+tgcrypto = "^1.2.5"
+pillow = "^9.5.0"
 
 
 [build-system]
