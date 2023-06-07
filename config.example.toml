@@ -1,0 +1,8 @@
+timezone = 'Asia/Bishkek'
+
+[telegram_account]
+api_id = 0
+api_hash = "djasfjdsjfdsf"
+
+[assets]
+font_file_path = "absolute path to .ttf file"
