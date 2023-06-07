@@ -5,6 +5,17 @@
 
 ---
 
+This script updates your avatar photo in Telegram to the current time.
+
+<details>
+<summary>How does it look like?</summary>
+<img src="./assets/example.gif" />
+</details>
+
+Supports light and dark theme.
+
+---
+
 ## ❓ How to install
 
 #### 1. Setup virtual environment
