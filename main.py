@@ -10,6 +10,17 @@ from pyrogram import Client
 from pyrogram.types import Photo
 
 
+class Coordinates(NamedTuple):
+    x: int
+    y: int
+
+
+@dataclass(frozen=True, slots=True)
+class Theme:
+    background_color: str
+    font_color: str
+
+
 @dataclass(frozen=True, slots=True)
 class Config:
     api_id: int
@@ -38,17 +49,6 @@ async def set_image(client: Client) -> None:
     await client.delete_profile_photos([p.file_id for p in photos[1:]])
     with open('./.avatar.png', 'rb') as file:
         await client.set_profile_photo(photo=file)
-
-
-class Coordinates(NamedTuple):
-    x: int
-    y: int
-
-
-@dataclass(frozen=True, slots=True)
-class Theme:
-    background_color: str
-    font_color: str
 
 
 @dataclass(frozen=True, slots=True)
